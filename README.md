@@ -37,10 +37,14 @@ its two primary functions.
 The result of the programme is an HDF5 file with the following hierarchy:
 
 <prefix>.hdf5
+
 ├── grids
+
 │   ├── kpts
+
 │   └── qpts
+
 └── epmat
     └── dataset
-
+    
 The `epmat` dataset is the entire 5D array of data returned by `EPW`. 
