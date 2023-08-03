@@ -7,7 +7,6 @@ set(CMAKE_CXX_COMPILER ${MPI_CXX_COMPILER})
 set(CMAKE_CXX_STANDARD 17)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -O3 -march=native -fopenmp -fbounds-check")
-add_compile_options(-O3 -march=native -fopenmp -fbounds-check)
 find_package(HDF5 REQUIRED COMPONENTS C HL)
 if(NOT HDF5_IS_PARALLEL)
         message( FATAL_ERROR "HDF5 is not built to be run in parallel. Aborting")
