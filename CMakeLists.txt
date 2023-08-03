@@ -29,4 +29,4 @@ target_include_directories(process_g.x PRIVATE ${HDF5_INCLUDE_DIRS} ${HDF5_C_INC
 target_link_directories(process_g.x PRIVATE ${BOOST_LIBRARY_DIRS})
 
 # Link libraries
-target_link_libraries(process_g.x PRIVATE ${HDF5_C_LIBRARIES} Boost::regex Boost::mpi Boost::serialization)
+target_link_libraries(process_g.x PRIVATE ${HDF5_C_LIBRARIES} Boost::regex Boost::mpi Boost::serialization -lgomp)
